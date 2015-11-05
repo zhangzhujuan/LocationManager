@@ -217,24 +217,6 @@ NSString * const RYLocationManagerDidFailedLocateNotification    = @"LocationMan
         CLPlacemark *placemark = [placemarks lastObject];
         if (placemark) {
             NSDictionary *addressDictionary = placemark.addressDictionary;
-            
-//            NSLog(@"State:%@",addressDictionary[@"State"]);
-//            NSLog(@"City:%@",addressDictionary[@"City"]);
-//            NSLog(@"SubLocality:%@",addressDictionary[@"SubLocality"]);
-//            NSLog(@"Street:%@",addressDictionary[@"Street"]);
-//            NSLog(@"FormattedAddressLines:%@",[addressDictionary[@"FormattedAddressLines"] lastObject]);
-            /*
-             State:河南省
-             City:驻马店市
-             SubLocality:驿城区
-             Street:前进路二巷
-             
-             State:上海市
-             City:上海市
-             SubLocality:徐汇区
-             Street:宛平南路850号
-             FormattedAddressLines:中国上海市徐汇区枫林路街道宛平南路850号
-             */
             self.state                 = addressDictionary[@"State"];
             self.city                  = addressDictionary[@"City"];
             self.subLocality           = addressDictionary[@"SubLocality"];
@@ -282,3 +264,16 @@ NSString * const RYLocationManagerDidFailedLocateNotification    = @"LocationMan
 }
 
 @end
+
+/*
+ State:河南省
+ City:驻马店市
+ SubLocality:驿城区
+ Street:前进路二巷
+ 
+ State:上海市
+ City:上海市
+ SubLocality:徐汇区
+ Street:宛平南路850号
+ FormattedAddressLines:中国上海市徐汇区枫林路街道宛平南路850号
+ */

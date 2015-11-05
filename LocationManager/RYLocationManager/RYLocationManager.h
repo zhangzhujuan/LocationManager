@@ -40,10 +40,12 @@ typedef NS_ENUM(NSUInteger, RYLocationManagerLocationServiceStatus) {
 @interface RYLocationManager : NSObject <CLLocationManagerDelegate>
 
 
-@property (nonatomic, readonly) RYLocationManagerLocationResult        locationResult;
-@property (nonatomic, readonly) RYLocationManagerLocationServiceStatus locationStatus;
+@property (nonatomic, assign, readonly) RYLocationManagerLocationResult        locationResult;
+@property (nonatomic, assign, readonly) RYLocationManagerLocationServiceStatus locationStatus;
 
 @property (nonatomic, copy, readonly) CLLocation *locatedCityLocation;
+
+@property (nonatomic, assign) BOOL monitoringSignificantLocationChanges;
 
 
 @property (nonatomic, copy, readonly) NSString *state;

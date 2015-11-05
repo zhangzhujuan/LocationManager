@@ -20,8 +20,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationManagerDidSuccessedLocateNotification:) name:RYLocationManagerDidSuccessedLocateNotification object:nil];
     
-    RYLocationManager *locationManager = [RYLocationManager sharedInstance];
-    [locationManager startLocation];
+//    RYLocationManager *locationManager = [RYLocationManager sharedInstance];
+//    [locationManager startLocation];
     
     
 }

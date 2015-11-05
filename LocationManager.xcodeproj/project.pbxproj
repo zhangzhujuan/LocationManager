@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ED0C84F1BE8B01500BB192E /* RYBackgroudLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0C84E1BE8B01500BB192E /* RYBackgroudLocationManager.m */; };
 		4EEC00A41BE752B300FEA4C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC00A31BE752B300FEA4C4 /* main.m */; };
 		4EEC00A71BE752B300FEA4C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC00A61BE752B300FEA4C4 /* AppDelegate.m */; };
 		4EEC00AA1BE752B300FEA4C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC00A91BE752B300FEA4C4 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4ED0C84D1BE8B01500BB192E /* RYBackgroudLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYBackgroudLocationManager.h; sourceTree = "<group>"; };
+		4ED0C84E1BE8B01500BB192E /* RYBackgroudLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYBackgroudLocationManager.m; sourceTree = "<group>"; };
 		4EEC009E1BE752B300FEA4C4 /* LocationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEC00A21BE752B300FEA4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EEC00A31BE752B300FEA4C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 			children = (
 				4EEC00CB1BE7531F00FEA4C4 /* RYLocationManager.h */,
 				4EEC00CC1BE7531F00FEA4C4 /* RYLocationManager.m */,
+				4ED0C84D1BE8B01500BB192E /* RYBackgroudLocationManager.h */,
+				4ED0C84E1BE8B01500BB192E /* RYBackgroudLocationManager.m */,
 			);
 			path = RYLocationManager;
 			sourceTree = "<group>";
@@ -183,7 +188,7 @@
 						CreatedOnToolsVersion = 6.3.2;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -241,6 +246,7 @@
 				4EEC00CD1BE7531F00FEA4C4 /* RYLocationManager.m in Sources */,
 				4EEC00A71BE752B300FEA4C4 /* AppDelegate.m in Sources */,
 				4EEC00A41BE752B300FEA4C4 /* main.m in Sources */,
+				4ED0C84F1BE8B01500BB192E /* RYBackgroudLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +441,7 @@
 				4EEC00C31BE752B400FEA4C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EEC00C41BE752B400FEA4C4 /* Build configuration list for PBXNativeTarget "LocationManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +450,7 @@
 				4EEC00C61BE752B400FEA4C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
